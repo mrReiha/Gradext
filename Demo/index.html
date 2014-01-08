@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Gradext</title>
+		<meta name="keywords" content="Gradext,gradient,text,string,javascript,colourful,colorful,animation" />
+		<meta name="description" content="Fills Texts with Gradient ( and much more ... )" />
+		<script src="gradext.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:700|Exo+2:200' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+	<body>
+		<div id="main">
+			<header>
+				<h1 id="gradient">Get Familiar With Gradext</h1>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="#introduction">Introduction</a></li>
+					<li><a href="#examples">Examples</a></li>
+				</ul>
+			</nav>
+			<div role="main">
+				<div id="introduction" class="cont">
+					<article>
+						<h2>What? Gradext ?</h2>
+						<p>
+							Yeah, I’m a lightweight script, (less than 7 KB), which I don’t need other libraries because I’m free and Independent. My task is to fill your text with Gradient.
+						</p>
+					</article>
+					<article>
+						<h2>Gradient on the text? You want to make a picture for each text? Or like the others you have the Claim of being modern and make Canvas?</h2>
+						<p>
+							I hope you don’t upset, but none. Finally, The texts will remain as a text.
+						</p>
+					</article>
+					<article>
+						<h2>Well if it’s like what you say, it's really good! How to use it?</h2>
+						<p>
+							I have two types of gradient, linear and radial just, you should call each of them you want.
+							<br />
+							<code>
+								gradext.linear({ elemID: <span class="val">id</span> });<br/><span> // The elemID is the only thing that should determine, other items are optional, even colors. </span>
+							</code>
+							<code>
+								gradext.radial({elemID: <span class="val">id</span> });<br/><span> // The elemID is the only thing that should determine, other items are optional, even colors. </span>
+							</code>
+						</p>
+					</article>
+					<article>
+						<h2>Well, how can I apply my own setting?</h2>
+						<p>
+							Oh! Now, we got to the good parts!
+							<br />
+							However, in this version I’m not too wide, but I promise that I will develop myself.
+							A series of my options are the same in both methods, but also have some differences. First I   will say the Subscriptions:
+							<code>
+								startPosition: <span class="val">int</span><span> // Starting point of Gradient </span>
+							</code>
+							<code>
+								endPosition: <span class="val">int</span><span> // Ending point of Gradient </span>
+							</code>
+							<code>
+								startColor: <span class="val">hexadecimal code</span><span> // First Color (*) </span>
+							</code>
+							<code>
+								endColor: <span class="val">hexadecimal code</span><span> // Last Color (*) </span>
+							</code>
+							<code>
+								elemID: <span class="val">string</span><span> // ID of the tag which contains the text </span>
+							</code>
+							<code>
+								mode: <span class="val">string</span><span> // horizontal or vertical of the gradient was identified as the 'horizontal' and 'vertical' </span>
+							</code>
+							<code>
+								quality: <span class="val">string</span><span> // If the Vertical mode be selected, specify the level of quality of the gradient (usually for a font size of 50 pixels, the quality between 30 to 40 is Ideal) </span>
+							</code>
+							<code>
+								rgb: <span class="val">boolean</span><span> // accepts the true and false and specify the type of output color format which is hexadecimal or RGB
+							</code>
+							* I have to say about the color that the acceptable color is hexadecimal code and I don’t accept the RGB code, but I will accept each hexadecimal codes which the css accepts.
+							<br/>
+							But the radial method has some other settings :
+							<code>
+								radius: <span class="val">int</span><span> // Which shows the radius of the gradient </span>
+							</code>
+							<code>
+								animation: <span class="val">boolean</span><span> // accepts true or false value, and determined that the Gradient can have Animation or not </span>
+							</code>
+							<code>
+								delay: <span class="val">float</span><span> // a numeric scale of seconds which determined the pause scale between each animation.
+							</code>
+							<code>
+								direction: <span class="val">string</span><span> // It determined the direction of the animation, which can be left to right ('ltr') or right to left ('rtl') </span>
+							</code>
+						</p>
+					</article>
+					<article>
+						<h2>You Seem Great! But, honestly, now the gradient is not too much used. where do you like to use you?</h2>
+						<p>
+							Of course there are always new ideas, but maybe for some titles, effects of the animation would be interesting thing.
+							Or sometimes it becomes interesting if the texts have a Gradient from left to right and the background has the opposite. Or on success or error messages for some users requests or anywhere else...
+							<br/>
+							this is your art to surprise me with your creativity ...
+							<br/>
+							Just one issue that I want to say is that my animation don’t have a good performance ( it increases the cpu usage in some cases ) and it is better to set up at least half a second delay for it, but I'm hopeful that in other versions I will make it  better.
+						</p>
+					</article>
+					<article>
+						<a href="https://github.com/mrReiha/Gradext"><img style="position:fixed;top:0;left:0;z-index:9" src="images/fork.png" alt="Fork Me on Github" /></a>
+						<h2>Well, where can I download you?</h2>
+						<p>
+							we will approach it soon, but before that I have a surprise method for you, hover-able ( gradext.hoverable() ) is a method that run radial gradient.
+							But the start point of radius gradient is a character which mouse of the user is located over it and some settings are differences from radial, for example:
+							<code>
+								animation: <span class="val">boolean</span><span> // It accepts true or false value and it determines that the specified color on the character should applied quickly or with animation </span>
+							</code>
+							We do not work with delay and direction
+							<br/>
+							I suggest that even once (even for testing) use it now, it’s such an interesting thing: D
+							<br/>
+							I've forgotten, for download , you should go to my github page and download me!
+						</p>
+					</article>
+					<article>
+						<h2>May I still be in touch with you?</h2>
+						<p>
+							Sure! If you got problem using me, just open your console( shift+(K or J) ) and i am there ...
+							<br />
+							and also, If you had any questions or you had any idea for my development, if you think that would add a certain method or anything else, to connect with me be Relax ;)
+							<br/>
+							<img src="images/email.png" />
+						</p>
+					</article>
+					<article>
+						<h2>Thanks</h2>
+						<p>
+							Hope to see you …
+						</p>
+					</article>
+				</div>
+				<div id="examples" class="cont demo">
+					<h2>Some Examples</h2>
+					<br/>
+					<article>
+						<div id="fg" class="res">
+							Lorem ipsum dolor sit amet, tincidunt ut laoreet dolore magna aliquam erat volutpat.
+						</div>
+						<p>
+							<code>
+								gradext.linear({
+									elemID:<span class="val">'fg'</span>,
+									startColor:'<span class="val">#932'</span>,
+									endColor:<span class="val">'#fa9'</span>,
+									rgb:<span class="val">true</span>
+								});
+							</code>
+						</p>
+					</article>
+					<article>
+						<div id="sg" class="res">
+							Lorem ipsum dolor sit amet, tincidunt ut laoreet dolore magna aliquam erat volutpat.
+						</div>
+						<p>
+							<code>
+								gradext.linear({
+									elemID:<span class="val">'sg'</span>,
+									mode:<span class="val">'vertical'</span>,
+									quality:<span class="val">25</span>,
+									startPosition:<span class="val">7</span>,
+									endPosition:<span class="val">16</span>,
+									startColor:<span class="val">'#51A527'</span>,
+									endColor:<span class="val">'#9AF780'</span>
+								});
+							</code>
+						</p>
+					</article>
+					<article>
+						<div id="tg" class="res">
+							Lorem ipsum dolor sit amet, tincidunt ut laoreet dolore magna aliquam erat volutpat.
+						</div>
+						<p>
+							<code>
+								gradext.radial({
+									elemID:<span class="val">'tg'</span>,
+									mode:<span class="val">'vertical'</span>,
+									quality:<span class="val">30</span>,
+									animation:<span class="val">true</span>,
+									delay:<span class="val">.75</span>,
+									startColor:<span class="val">'#3D87AF'</span>,
+									endColor:<span class="val">'#80CDF7'</span>,
+									radius:<span class="val">15</span>,
+									direction:<span class="val">'ltr'</span>
+								});
+							</code>
+						</p>
+					</article>
+					<article>
+						<div id="ng" class="res">
+							Lorem ipsum dolor sit amet, tincidunt ut laoreet dolore magna aliquam erat volutpat.
+						</div>
+						<p>
+							<code>
+								gradext.hoverable({
+									elemID:<span class="val">'ng'</span>,
+									animation:<span class="val">true</span>,
+									startColor:<span class="val">'#EF9432'</span>,
+									endColor:<span class="val">'#7F480E'</span>,
+									radius:<span class="val">10</span> <span> //hover text above :D </span>
+								});
+							</code>
+						</p>
+					</article>
+					<script>
+						gradext.linear({
+							elemID:'fg',
+							startColor:'#932',
+							endColor:'#fa9',
+							rgb:true
+						});
+						gradext.linear({
+							elemID:'sg',
+							mode:'vertical',
+							quality:25,
+							startPosition:7,
+							endPosition:16,
+							startColor:'#51A527',
+							endColor:'#9AF780'
+						});
+						gradext.radial({
+							elemID:'tg',
+							mode:'vertical',
+							quality:30,
+							animation:true,
+							delay:.75,
+							startColor:'#3D87AF',
+							endColor:'#80CDF7',
+							radius:15,
+							direction:'ltr'
+						});
+						gradext.hoverable({
+							elemID:'ng',
+							animation:true,
+							startColor:'#EF9432',
+							endColor:'#7F480E',
+							radius:10
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="cont">
+				<div class="left">
+					And a Special Thanks to <a href="https://twitter.com/_hengam">@_hengam</a> for Translating this Page
+					<br/>
+					Crafted by <a href="http://reiha.net">mrReiha</a> under GNU License
+				</div>
+				<div class="right">
+					<br/>
+					2014
+				</div>
+			</div>
+		</footer>
+		<script>
+			gradext.radial({
+				elemID:'gradient',
+				radius:10,
+				animation:1,
+				startColor:'#8acc14',
+				endColor:'#dcf32f',
+				delay:2
+			});
+		</script>
+	</body>
+</html>

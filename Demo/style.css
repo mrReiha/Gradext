@@ -1,0 +1,171 @@
+/*
+####### mrReiha is here !
+####### @mrReiha
+####### www.reiha.net
+*/
+a,a:link,a:hover,a:focus{
+	text-decoration:none;
+	color:inherit;
+}
+html,body {
+	height:100%;
+	padding:0;
+	margin:0;
+}
+.left { float:left; }
+.right { float:right }
+.cont {
+	width:90%;
+	margin:50px auto;
+	padding:20px 0;
+}
+.clearfix {
+	height:1px;
+	clear:both;
+	float:none;
+}
+#main {
+	position:relative;
+	z-index:5;
+	background:#fff;
+	width:100%;
+}
+header {
+	text-align:center;
+	font:38px 'Alegreya Sans';
+	background:url('images/bg.jpg') no-repeat #72b52a fixed;
+	background-size:cover;
+	color:#fff;
+	text-shadow:0 1px 0 #3d7f0d;
+	padding:8% 0;
+	position:relative;
+	z-index:5;
+	word-spacing:2px;
+	letter-spacing:-2px;
+	border-bottom:1px solid #222;
+	box-shadow:inset 0 -2px 5px -1px rgba(15,15,15,.5);
+}
+nav,nav ul {
+	width:100%;
+	overflow:hidden;
+	text-align:center;
+	background:#fff;
+	position:relative;
+	z-index:5;
+}
+	nav ul {
+		padding:13px 0	;
+		margin:0;
+	}
+		nav ul li { 
+			list-style:none;
+			display:inline-block;
+		}
+			nav ul li a {
+				display:inline-block;
+				padding:10px 50px;
+				font:35px 'Exo 2';
+				border-bottom:2px solid #ccc;
+			}
+			nav ul li:first-child a { border-left:2px solid #ccc; }
+			nav ul li:last-child a { border-right:2px solid #ccc; }
+			nav ul li a:hover,nav ul li:last-child a:hover,nav ul li:first-child a:hover { border-color:#666 }
+#introduction h2:before,h3:before,h4:before{
+	content:'Q : ';
+	color:#aaa;
+	margin-left:-34px;
+}
+h2,h3,h4,h5 {
+	font:25px 'Alegreya Sans';
+	color:#333;
+	margin:0;
+}
+#introduction article>p:before {
+	content:'A : ';
+	color:#3c3;
+	margin-left:-28px;
+}
+p {
+	font:20px/1.2 'Exo 2';
+	margin: 10px auto;
+}
+article>p:empty:before {
+	content:'';
+}
+article {
+	margin-bottom:100px;
+}
+article>h1,article>h2,article>h3 {
+	border-bottom:1px solid #ccc;
+	padding-bottom:10px;
+}
+code {
+	font-size:18px;
+	background:rgba(238,238,238,.3);
+	border:1px solid #ddd;
+	border-radius:3px;
+	padding:10px;
+	display:block;
+	margin:10px auto;
+	color:#444;
+}
+code span {
+	color:#aaa;
+	font-style:italic;
+}
+code .val {
+	color:#61b;
+}
+.demo article {
+	border:3px double #ccc;
+	border-left:0;
+	border-right:0;
+	margin:0;
+	padding:40px 0;
+}
+.demo article:last-of-type{ border-bottom:none; }
+.cont.demo { margin-bottom:0 }
+footer {
+	background:url('images/bg.jpg') no-repeat #72b52a fixed;
+	color:#fff;
+	text-shadow:0 1px 0 #333;
+	font:18px 'Exo 2';
+	height:80px;
+	position:relative;
+	z-index:-2;
+	padding:0 50px;
+	border-top:1px solid #222;
+	box-shadow:inset 0 3px 5px -1px rgba(15,15,15,.7);
+	overflow:hidden;
+}
+	footer .cont {
+		position:fixed;
+		z-index:-1;
+		margin:0;
+		bottom:0;
+	}
+.res {
+	font:32px impact;
+}
+.res div {
+}
+@media only screen and (max-width:1025px) {
+	.cont{
+		width:80%;
+	}
+}
+@media only screen and (max-width:660px) {
+	footer{height:140px;}
+}
+@media only screen and (max-width:605px) {
+	nav ul li:first-child a { border-right:2px solid #ccc; }
+	nav ul li:last-child a { border-left:2px solid #ccc; }
+	nav ul li{ display:block }
+	footer{height:180px}
+}
+@media only screen and (max-width:400px) {
+	.cont{
+		width:70%;
+	}
+	footer{height:220px}
+}
