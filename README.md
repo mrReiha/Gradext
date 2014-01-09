@@ -1,4 +1,5 @@
 Gradext
 =======
 
-Make Gradient on Texts , and Make it Movable ...
+fill texts with gradient ...
+<a href="http://mrreiha.github.io/gradext/">Demo</a>
