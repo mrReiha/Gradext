@@ -206,7 +206,6 @@
 		radial:function(args){
 			var _args=this.__make.apply(args,[this]),
 				args=_args.args;
-				alert('sadas');
 			(function __anim(){
 				var j=_args.count;
 				if(!args.animation&&_args.rev) j=_args.total;
