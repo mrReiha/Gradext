@@ -5,13 +5,19 @@
 */
 (function(_){
 	'use strict';
-	var	requestAnim,cancelAnim,e,
+	var	requestAnim,e,
 	gradext=({
 		__init:function(){
 			var r=~~(Math.random()*5),arg;
 			e=new Array;
 			requestAnim=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame;
-			cancelAnim=window.cancelAnimationFrame||window.mozCancelAnimationFrame||window.webkitCancelAnimationFrame||window.CancelAnimationFrame||window.msCancelAnimationFrame;
+			if(requestAnim===undefined){
+				requestAnim=function(a){
+					var id=setTimeout(function(){
+						a();
+					},1000/60);
+				}
+			}
 			return arg=({
 				animation:this.animation||0,
 				startColor:this.startColor||['#0b2b87','#0a6b51','#dbd952','#c31fc1','#f1676e'][r],
