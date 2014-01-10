@@ -10,8 +10,8 @@
 		__init:function(){
 			var r=~~(Math.random()*5),arg;
 			e=new Array;
-			requestAnim=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||oRequestAnimationFrame||msRequestAnimationFrame;
-			cancelAnim=cancelAnimationFrame||mozCancelAnimationFrame||webkitCancelAnimationFrame||oCancelAnimationFrame||msCancelAnimationFrame;
+			requestAnim=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame;
+			cancelAnim=window.cancelAnimationFrame||window.mozCancelAnimationFrame||window.webkitCancelAnimationFrame||window.CancelAnimationFrame||window.msCancelAnimationFrame;
 			return arg=({
 				animation:this.animation||0,
 				startColor:this.startColor||['#0b2b87','#0a6b51','#dbd952','#c31fc1','#f1676e'][r],
@@ -206,6 +206,7 @@
 		radial:function(args){
 			var _args=this.__make.apply(args,[this]),
 				args=_args.args;
+				alert('sadas');
 			(function __anim(){
 				var j=_args.count;
 				if(!args.animation&&_args.rev) j=_args.total;
